@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Product Filter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h2>Products:</h2>
+  <section class="filters">
+    <label for="categoryFilter">Category:</label>
+    <select id="categoryFilter">
+      <option value="all">All Categories</option>
+      <option value="JEANS">JEANS</option>
+      <option value="SKIRT">SKIRT</option>
+      <option value="SHORTS">SHORTS</option>
+    </select>
+
+    <label for="priceSort">Sort by Price:</label>
+    <select id="priceSort">
+      <option value="default">Default</option>
+      <option value="asc">Low to High</option>
+      <option value="desc">High to Low</option>
+    </select>
+  </section>
+
+  <section class="products">
+    <div class="product" data-category="JEANS" data-price="1000">
+      <img src="https://images.pexels.com/photos/4041687/pexels-photo-4041687.jpeg" alt="Jeans" width="200">
+      <h3>Stylish Jeans</h3>
+      <p>Price: ₹1000</p>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="product" data-category="SKIRT" data-price="600">
+      <img src="https://images.pexels.com/photos/1661470/pexels-photo-1661470.jpeg" alt="Skirt" width="200">
+      <h3>Trendy Skirt</h3>
+      <p>Price: ₹600</p>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="product" data-category="SHORTS" data-price="1200">
+      <img src="https://images.pexels.com/photos/7679863/pexels-photo-7679863.jpeg" alt="Shorts" width="200">
+      <h3>Comfy Shorts</h3>
+      <p>Price: ₹1200</p>
+      <button>Add to Cart</button>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
